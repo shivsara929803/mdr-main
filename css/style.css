@@ -178,7 +178,6 @@ header .fa-bars{
     position: relative;
     overflow: hidden;
     align-items: center;
-    /* justify-content: center; */
 }
 .portfolio .row .box:hover img{
     /* transform: translateY(-100%); */
@@ -194,13 +193,7 @@ header .fa-bars{
     }
   }
   
-  /* @media only screen and (min-width: 768px) and (max-width: 991px) { */
-    /* .portfolio .row .box img{
-        height: 200px;
-        width: 200px;
-        margin-left: 120px;
-        /* object-fit:none; */
-    /* } */
+  
   
 
   @media only screen and (max-width: 767px) {
