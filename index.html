@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn fonawsam  -->
+    <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
+    <!-- swipper cdn  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "URdCZ4rufhPEZZPdb",
+            });
+        })();
+    </script>
+
+    <script type="text/javascript">
+        function sendMail() {
+            // alert("Hi")
+        
+        var params = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          phone: document.getElementById("phone").value,
+          message: document.getElementById("message").value,
+        };
+
+        // alert(params)
+    
+        const serviceID = "service_l6krq5d";
+        const templateID = "template_hpe4rst";
+    
+        emailjs.send(serviceID, templateID, params)
+        .then(res=>{
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "",
+            document.getElementById("message").value = "";
+            console.log(res);
+            // alert("Your message sent successfully!!")
+    
+        })
+        .catch(err=>console.log(err));
+    
+        }
+      </script>
+
+        
+
+    <title>MDR Exports</title>
+    <link rel="icon" type="image/x-icon" href="/img/fotor-20240616173831.png">
+
+</head>
+<body>
+    <!-- header  -->
+    <header class="header">
+        <!-- <a href="#home" class="logo">Business</a> -->
+         <img class="logo" src="./img/fotor-20240616173831.png" alt="" height="70px" style="border-radius: 100px;">
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#services">services</a>
+            <a href="#portfolio">achievments</a>
+            <a href="#team">testimonials</a>
+            <!-- <a href="#blog">blog</a> -->
+            <a href="#contact">contact</a>
+        </nav>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+    <!-- /header  -->
+    <!-- home  -->
+    <div class="home" id="home">
+        <div class="swiper home-slid">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="img/hero-carousel/background.png" alt="image">
+                    </div>
+                    <div class="content">
+                        <h3>Leading Manufacturer of
+                            <br>  cashew nut shell liquid oil</h3>
+                        <p>Best quality, always fresh.</p>
+                        <!-- <a href="#" class="btn">get start</a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+    </div>
+    <!-- /home  -->
+    <!-- about  -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>about Business</h2>
+            <div></div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="img/about/cashew-fruit-flavour (1)-Photoroom.png" alt="image" style="margin-left: -70px;">
+            </div>
+            <div class="content">
+                <p><b>MDR Cashews</b>
+                    situated at Panruti, Tamil Nadu have gained market appreciation as an exporter, supplier and trading company of fresh and delicious cashew nuts & raw cashew nuts. Our cashew nuts are cultivated in the finest farms that too without using any harmful pesticides. These nuts are large and uniform in size. We also provide raw cashew nuts, salted cashew nuts, roasted cashew nuts and fried cashew nuts that are delicious and well-packed. The fresh cashew nuts offered by us are highly appreciated by one and all for being delectable and crunchy. We have a proficient team that helps in managing the entire business endeavors in a customer-friendly way. We maintain the quality of cashews by following food safety norms and stringent checks. Depending upon the customers' specifications, we offer cashew nuts in different weight requirements.</p>
+                <!-- <div>--Renovaion of Commercial Office</div> -->
+            </div>
+        </div>
+    </section>
+    <!-- /about  -->
+    <!-- services  -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>our services </h2>
+            <div></div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <img src="./img/services/cnsl2.webp" height="103px" alt="">
+                <h4>Cashew Nut Shell Liquid</h4>
+                <p>One source of naturally occurring phenols is Cashew Nut Shell Liquid (CNSL). The shell of a cashew nut is used to make it. </p>
+            </div>
+
+            <div class="box">
+                <img src="./img/services/cnsl-resin.webp" height="103px" alt="">
+                <h4>CNSL Resin</h4>
+                <p>CNSL Resin is a clear viscous resin with a golden colour film that is suited for surface coating applications due to its film characteristics and strong resilience. </p>
+            </div>
+
+            <div class="box">
+                <img src="./img/services/Cardonal.jpg" height="103px" alt="">
+                <h4>Cardonal</h4>
+                <p>Cardanol is a renewable &amp; inexpensive organic natural resource that is easily obtained via the vacuum distillation of roasted cashew nut shell liquid (CNSL). </p>
+              </div>
+            </div>
+
+            <!-- <div class="box">
+                <i class="fa-solid fa-binoculars"></i>
+                <h3>
+                    Social Marketer
+                </h3>
+                <p>will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.</p>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <i class="fa-solid fa-sun"></i>
+                    <h3>
+                        Seo Expart
+                    </h3>
+                </div>
+                <p>will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.</p>
+            </div>
+
+            <div class="box">
+                <div class="content">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3>
+                        24/7 Support
+                    </h3>
+                </div>
+                <p>will have to make sure the prototype looks finished by inserting text or photo.make sure the prototype looks finished by.</p>
+            </div> -->
+        </div>
+    </section>
+    <!-- /services  -->
+    <!-- portfolio  -->
+    <div class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2>Our Achievments</h2>
+            <div></div>
+        </div>
+        <div class="row">
+
+            <div class="box">
+                <img src="img/ach/e-illustration-de-vecteur-logo-l-anniversaire-d-affaires-étiquettes-du-jubilé-modèle-trentième-des-bannières-194591059.jpg" alt="image">
+                <div class="content">
+                    <h3></h3>
+                    <p>'Experience is what you get while looking for something else.' <br> – Federico Fellini</p>
+                    <a href=""></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/ach/15-restriction-flat-sign-isolated-in-red-circle-age-limit-symbol-no-under-fifteen-years-warning-illustration-2F9EXYX.jpg" alt="image">
+                <div class="content">
+                    <h3>
+                        <!-- Expert Coder -->
+                    </h3>
+                    <p>We offer over 15+ byproducts from the cashew tree.</p>
+                    <a href="#" ></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/ach/Eo_circle_yellow_number-3.svg.png" alt="image">
+                <div class="content">
+                    <h3>
+                        <!-- Expert Coder -->
+                    </h3>
+                    <p>We achieved by exporting more than 3 Million tones of our products over 35+countries.</p>
+                    <a href="#" ></a>
+                </div>
+            </div>
+
+            
+
+            
+
+            
+        </div>
+    </div>
+    <!-- /portfolio  -->
+    <!-- team  -->
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>founder's message</h2>
+            <div></div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="img/testimonials/ranga.jpg" alt="image" style="width: 400px; margin-left: -40px; margin-right: 50px;">
+            </div>
+            <div class="content" style="padding-left: 20px;">
+                <h2 class="section-subtitle">WE BELIEVE IN GREAT IDEAS</h2>
+        
+        <p>
+          To continue delivery high quality, fresh products and meet time schedules on the dot. Delivery utmost customer satisfaction through best of pricing and peerless servicing of order whatever the quantity.
+        </p>
+        <p>To be a leading player in the world market for Indian Cashew while building a network of trusted business associations across the globe to finally lead the field with sustained business excellence.
+        </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="team" id="team">
+
+        <div class="heading">
+            <h2>testimonials </h2>
+            <div></div>
+        </div>
+        <div class="row">
+            <div class="swiper team-slider">
+                <div class="swiper-wrapper">
+            
+                    <div class="swiper-slide box">
+                        <div class="content">
+                            <h3>Saravanan</h3>
+                            <p>"Excellent quality nuts and very good packaging. All nuts especially cashews are so good yummy, and I will definitely recommend them to all."</p>
+                            <img src="./img/testimonials/ranga.jpg" alt="" style="">
+
+                        </div>
+                        <div class="image">
+                            <img src="img/testimonials/testimonials-1.jpg" alt="image">
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide box">
+                        <div class="content">
+                            <h3>Saravanan</h3>
+                            <p>"Excellent quality nuts and very good packaging. All nuts especially cashews are so good yummy, and I will definitely recommend them to all."</p>
+                        </div>
+                        <div class="image">
+                            <img src="img/testimonials/ranga.jpg" alt="image">
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide box">
+                        <div class="content">
+                            <h3>Saravanan</h3>
+                            <p>"We have ordered all flavour of cashews,pista,amla and more, quality taste packaging all are extraordinary."</p>
+                            
+                        </div>
+                        <div class="image">
+                            <img src="img/testimonials/testimonials-3.jpg" alt="image">
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide box">
+                        <div class="content">
+                            <h3>jon</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id doloremque molestiae</p>
+                            
+                        </div>
+                        <div class="image">
+                            <img src="img/testimonials/testimonials-4.jpg" alt="image">
+                        </div>
+                    </div>
+            
+                    <div class="swiper-slide box">
+                        <div class="content">
+                            <h3>jon</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id doloremque molestiae</p>
+                            
+                        </div>
+                        <div class="image">
+                            <img src="img/testimonials/testimonials-5.jpg" alt="image">
+                        </div>
+
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <section class="achievement" id="achievement" >
+        <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="block">
+                <ul class="counter-box clearfix">
+                  <li>
+                    <div class="counter-item">
+                      <i class="ion-ios-timer-outline"></i>
+                      <h4 class="count">25+</h4>
+                      <span>Years of Experience</span>
+                    </div>
+                  </li>
+                  <li>
+            
+                    <div class="counter-item">
+                      <i class="ion-ios-glasses-outline"></i>
+                      <h4 class="count">16+</h4>
+                      <span>Products</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="counter-item">
+                      <i class="ion-ios-compose-outline"></i>
+                      <h4 class="count" >2M</h4>
+                      <span>Tones Exported</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="counter-item">
+                      <i class="ion-ios-compose-outline"></i>
+                      <h4 class="count">16</h4>
+                      <span>Countries Exported</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    </section> -->
+
+    <!-- team  -->
+    <!-- .blog  -->
+    <!-- <section class="blog" id="blog">
+        <div class="heading">
+            <h2>Our Achievments</h2>
+            <div></div>
+        </div>
+        <div class="row">
+            <div class="box">
+                <ion-icon name="hourglass-outline"></ion-icon>
+                <h4 class="count">25+</h4>
+                <span>Years of Experience</span>
+            </div>
+
+            <div class="box">
+                <img src="img/blog/2.jpg" alt="image">
+                <h3>Assumenda repud eum veniam</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti natus assumenda excepturi ipsam consequuntur officia possimus magni, saepe tempore, repellendus in recusandae quos beatae corrupti placeat est architecto vero aut.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="img/blog/3.jpg" alt="image">
+                <h3>Assumenda repud eum veniam</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti natus assumenda excepturi ipsam consequuntur officia possimus magni, saepe tempore, repellendus in recusandae quos beatae corrupti placeat est architecto vero aut.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section> -->
+    <!-- blog  -->
+    <!-- <div class="welcam">
+        <span>welcom to our business company <a href="#" class="btn">start now</a></span>
+    </div> -->
+    <!-- .contact  -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>contact us</h2>
+            <div></div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <div>call: +91 73393 86701</div>
+                
+            </div>
+            <div class="content">
+                <i class="fa-solid fa-envelope"></i>
+                <div>mdrexports11@gmail.com</div>
+                <!-- <div>web: www.exaple.com</div> -->
+            </div>
+            <div class="content">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>MDR Exports</div>
+                <div>282/4, Muthandikuppam Road,</div>
+                <div>Marungur Post, Panruti Taluk</div>
+                <!-- <div>egypt</div> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="ifarm">
+                <a href="https://www.google.com/maps/place/MDR+OIL+MILL/@11.6550716,79.5231923,17z/data=!3m1!4b1!4m6!3m5!1s0x3a54b0577218d491:0xb3337b910cc1bdbc!8m2!3d11.6550667!4d79.5255904!16s%2Fg%2F11b6q3q0k_?entry=ttu" target="_blank">
+                    <img src="./img/location.png" alt="" height="400px">
+                </a>
+            </div>
+            <div class="form-c">
+                <form action="">
+                    <input id="name" type="text" placeholder="name">
+                    <input id="email" type="email" placeholder="email">
+                    <input id="phone" type="number" placeholder="phone">
+                    <textarea id="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <!-- <input type="submit" value="send message"> -->
+                    <button onclick="sendMail()">send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- /contact  -->
+    <!-- footer  -->
+    <footer class="footer">
+        <p class="copyright mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by MDR Exports. All rights reserved.
+
+    </footer>
+    <!-- /footer  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
