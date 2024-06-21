@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 
+@media only screen and (max-width: 600px) {
+    body {
+      margin-right: -140px;
+    }
+  }
+
 *{
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -178,33 +184,28 @@ header .fa-bars{
     position: relative;
     overflow: hidden;
     align-items: center;
-    /* justify-content: center; */
 }
 .portfolio .row .box:hover img{
     /* transform: translateY(-100%); */
 }
 
 
-@media only screen and (min-width: 767px) {
-    .portfolio .row .box img{
+@media only screen and (min-width: 600px) {
+    .blog .row .box img{
         height: 200px;
         width: 200px;
         margin-left: 120px;
         /* object-fit:none; */
     }
+
+   
   }
   
-  /* @media only screen and (min-width: 768px) and (max-width: 991px) { */
-    /* .portfolio .row .box img{
-        height: 200px;
-        width: 200px;
-        margin-left: 120px;
-        /* object-fit:none; */
-    /* } */
+  
   
 
-  @media only screen and (max-width: 767px) {
-    .portfolio .row .box img{
+  @media only screen and (max-width: 600px) {
+    .blog .row .box img{
         height: 200px;
         width: 200px;
         /* margin-left: 120px; */
@@ -298,7 +299,29 @@ header .fa-bars{
     grid-template-columns: repeat(auto-fit,minmax(25%,1fr));
     gap: 2rem;
     margin: 6rem 0;
+    
 }
+
+.blog .row .box {
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .blog .row img {
+      margin-left: 200px;
+    }
+
+    .blog .row .box p{
+        color: var(--th-color);
+        font-size: 1.9rem;
+        margin: 1rem 0;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+  }
+
 .blog .row img{
     width: 100%;
     object-fit: cover;
@@ -308,10 +331,12 @@ header .fa-bars{
     font-size: 3rem;
     margin: 1.5rem 0;
 }
-.blog .row p{
+.blog .row .box p{
     color: var(--th-color);
     font-size: 1.9rem;
     margin: 1rem 0;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .welcam{
     padding: 7rem 0;
@@ -334,6 +359,7 @@ header .fa-bars{
     font-size: 3.8rem;
     color: var(--sc-color);
 }
+
 .contact .box div{
     font-size: 2rem;
     color: var(--th-color);
