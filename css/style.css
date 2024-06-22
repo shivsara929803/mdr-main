@@ -501,6 +501,7 @@ header .fa-bars{
     }
     .about .box .image img{
         width: 90%;
+        margin-left: 50px;
     }
     .services .row{
     

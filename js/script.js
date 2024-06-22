@@ -1,12 +1,40 @@
 let Navbar = document.querySelector('.navbar');
 let Fabars = document.querySelector('.fa-bars');
+let HomeToggle = document.querySelector('.home-toggle');
+let AboutToggle = document.querySelector('.about-toggle');
+let ServiceToggle = document.querySelector('.service-toggle');
+let PortfolioToggle = document.querySelector('.portfolio-toggle');
+let TestimionialToggle = document.querySelector('.testimonial-toggle');
+let ContactToggle = document.querySelector('.contact-toggle');
+
 
 Fabars.onclick = () =>{
     Navbar.classList.toggle("active")
 };
 
+HomeToggle.onclick = () =>{
+  Navbar.classList.toggle("active")
+};
 
+AboutToggle.onclick = () =>{
+  Navbar.classList.toggle("active")
+};
 
+ServiceToggle.onclick = () =>{
+  Navbar.classList.toggle("active")
+};
+
+PortfolioToggle.onclick = () =>{
+  Navbar.classList.toggle("active")
+};
+
+TestimionialToggle.onclick = () =>{
+  Navbar.classList.toggle("active")
+};
+
+ContactToggle.onclick = () =>{
+  Navbar.classList.toggle("active")
+};
 
 var swiper = new Swiper(".home-slid", {
     navigation: {
